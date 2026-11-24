@@ -4,7 +4,7 @@ name: CI
 # README, screenshotovi i dokumentacija ne pokrecu pipeline.
 on:
   push:
-    branches: [main]
+    branches: [master]
     tags: ["v*"]
     paths:
       - "**/*.py"
@@ -19,7 +19,7 @@ on:
       - "docker-compose.yml"
       - ".github/workflows/ci.yml"
   pull_request:
-    branches: [main]
+    branches: [master]
     paths:
       - "**/*.py"
       - "requirements*.txt"

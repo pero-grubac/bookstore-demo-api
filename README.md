@@ -2,7 +2,7 @@
 
 # 📚 Bookstore API
 
-[![CI](https://github.com/pero-grubac/BookstoreAPI/actions/workflows/ci.yml/badge.svg)](https://github.com/pero-grubac/BookstoreAPI/actions/workflows/ci.yml)
+[![CI](https://github.com/pero-grubac/bookstore-demo-api/actions/workflows/ci.yml/badge.svg)](https://github.com/pero-grubac/bookstore-demo-api/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.165-009688?logo=fastapi&logoColor=white)
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.1-D71F00?logo=sqlalchemy&logoColor=white)
@@ -138,7 +138,7 @@ alembic upgrade head
 ## 📁 Repository Structure
 
 ```
-BookstoreAPI/
+bookstore-demo-api/
 ├── app/
 │   ├── core/                     config, database, security (JWT, Argon2), cache, email, errors, pagination
 │   ├── features/
@@ -174,8 +174,8 @@ BookstoreAPI/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/pero-grubac/BookstoreAPI.git
-cd BookstoreAPI
+git clone https://github.com/pero-grubac/bookstore-demo-api.git
+cd bookstore-demo-api
 ```
 
 ### 2. Start everything
@@ -300,7 +300,7 @@ Both scripts place a real order as the demo customer.
 
 ## ⚙️ CI/CD
 
-[`ci.yml`](.github/workflows/ci.yml) runs on pushes and pull requests to `main`, **but only when something that affects the build changes**: Python code, requirements, lint config, migrations, scripts, the Dockerfile, `docker-compose.yml`, or the workflow itself. README edits and screenshots do not start a run. It can also be started by hand.
+[`ci.yml`](.github/workflows/ci.yml) runs on pushes and pull requests to `master`, **but only when something that affects the build changes**: Python code, requirements, lint config, migrations, scripts, the Dockerfile, `docker-compose.yml`, or the workflow itself. README edits and screenshots do not start a run. It can also be started by hand.
 
 | Job | Runner | Steps |
 |-----|--------|-------|
